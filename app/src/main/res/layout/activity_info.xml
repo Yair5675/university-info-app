@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".InfoActivity">
+
+    <TextView
+        android:id="@+id/uni_name_info"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:gravity="center_horizontal"
+        app:layout_constraintBottom_toTopOf="@+id/upper_limit_info"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/upper_limit_info"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.15" />
+
+    <TextView
+        android:id="@+id/location_tv_info"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@id/left_limit_info"
+        app:layout_constraintTop_toTopOf="@+id/upper_limit_info" />
+
+    <TextView
+        android:id="@+id/europe_rank_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/europe_rank_txt"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="@+id/location_tv_info"
+        app:layout_constraintTop_toBottomOf="@+id/location_tv_info"
+        app:layout_constraintBottom_toTopOf="@id/world_rank_info"
+        app:flow_verticalBias="0.5"
+        />
+
+    <TextView
+        android:id="@+id/world_rank_info"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/world_rank_txt"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="@+id/left_limit_info"
+        app:layout_constraintTop_toBottomOf="@id/europe_rank_tv"
+        app:layout_constraintBottom_toTopOf="@id/enrollment_info"
+        app:flow_verticalBias="0.5"/>
+
+    <TextView
+        android:id="@+id/enrollment_info"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/enrollment_txt"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="@+id/left_limit_info"
+        app:layout_constraintTop_toBottomOf="@id/world_rank_info"
+        app:layout_constraintBottom_toTopOf="@id/acceptance_tv_info"
+        app:flow_verticalBias="0.5"/>
+
+    <TextView
+        android:id="@+id/acceptance_tv_info"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/acceptance_txt"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="@+id/left_limit_info"
+        app:layout_constraintTop_toBottomOf="@id/enrollment_info"
+        app:layout_constraintBottom_toTopOf="@id/url_tv_info"
+        app:flow_verticalBias="0.5"/>
+
+    <TextView
+        android:id="@+id/url_tv_info"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="24dp"
+        android:autoLink="web"
+        android:text="@string/url_txt"
+        android:textColor="@color/url_color"
+        android:textSize="24sp"
+        app:flow_verticalBias="0.5"
+        app:layout_constraintBottom_toTopOf="@+id/uni_img_info"
+        app:layout_constraintEnd_toStartOf="@+id/right_limit_info"
+        app:layout_constraintStart_toStartOf="@+id/left_limit_info"
+        app:layout_constraintTop_toBottomOf="@id/acceptance_tv_info" />
+
+    <ImageView
+        android:id="@+id/uni_img_info"
+        android:layout_width="201dp"
+        android:layout_height="185dp"
+        app:layout_constraintBottom_toTopOf="@+id/lower_limit_info"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/uni_icon" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/lower_limit_info"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.9" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/left_limit_info"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.05" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/right_limit_info"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.95" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

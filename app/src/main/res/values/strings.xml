@@ -1,0 +1,37 @@
+<resources>
+    <string name="app_name">Universities</string>
+
+    <!-- Main activity strings: -->
+
+    <string name="credit"><b>Made by Yair</b></string>
+    <string name="instructions">Set the importance of the following attributes in the university you want:</string>
+
+    <string name="title_text"><b><u>Find Your University!</u></b></string>
+
+    <string name="select_subject">Select subject:</string>
+    <string name="search_unis"><b>Search!</b></string>
+
+    <array name="subjects">
+        <item>Astrophysics</item>
+        <item>Criminology</item>
+        <item>History</item>
+        <item>Nuclear Physics</item>
+        <item>Philosophy</item>
+        <item>Theoretical Physics</item>
+    </array>
+
+    <array name="uni_attributes">
+        <item>Europe Rank</item>
+        <item>World Rank</item>
+        <item>Acceptance Rate</item>
+        <item>Enrollment</item>
+    </array>
+
+    <!-- Info activity strings: -->
+    <string name="europe_rank_txt">Europe Rank (in %s): #%d</string>
+    <string name="world_rank_txt">World Rank (in %s): #%d</string>
+    <string name="enrollment_txt">Enrollment: %d</string>
+    <string name="acceptance_txt">Acceptance Rate: %s</string>
+    <string name="url_txt"><u>See the university!</u></string>
+
+</resources>
